@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohan Mali | Application Support Engineer & DevOps Enthusiast</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Mohan Mali's professional portfolio. Application Support Engineer with 2+ years of experience in Linux, Python, SQL, Nginx, and django. Aspiring DevOps Engineer.">
+    <meta name="keywords" content="Mohan Mali, Application Support Engineer, DevOps Engineer, Linux Admin, Production Support, Python Automation, SQL, Nginx, Django">
+    <meta name="author" content="Mohan Mali">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mohan Mali | Application Support Engineer & DevOps Enthusiast">
+    <meta property="og:description" content="2+ years of experience in Linux server administration, enterprise application troubleshooting, Python automation, and SQL. Currently learning Docker, CI/CD, AWS, and Kubernetes.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-symbol">&lt;</span>Mohan<span class="logo-dot">.</span>Mali<span class="logo-symbol">/&gt;</span>
+            </a>
+            
+            <nav class="nav-links-wrapper" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#services" class="nav-item">What I Do</a></li>
+                    <li><a href="#skills" class="nav-item">Skills</a></li>
+                    <li><a href="#objective" class="nav-item">Objective</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                
+                <!-- Quick Contact / Resume Shortcut -->
+                <a href="#contact" class="nav-cta-btn">Hire Me</a>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+            
+            <div class="hero-container">
+                <!-- Hero Left: Description -->
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fa-solid fa-code-branch"></i> Open for DevOps & Support Opportunities</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight-text">Mohan Mali</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typed-text-prefix">Application Support Engineer &</span><br>
+                        <span class="dynamic-typed-text" id="typed-text">DevOps Enthusiast</span>
+                    </h2>
+                    <p class="hero-description">
+                        Troubleshooting enterprise applications, managing Linux systems, and automating workflows. Transitioning from L2 application support to a DevOps framework utilizing containerization, cloud, and CI/CD pipelines.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#services" class="btn btn-primary">Explore Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                        <a href="#about" class="btn-text">More About Me <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="hero-social-links">
+                        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:mohan.mali@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Hero Right: Interactive Terminal Simulation -->
+                <div class="hero-visual">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-title">mohan@linux-server:~</div>
+                            <div class="terminal-actions">
+                                <i class="fa-solid fa-copy copy-btn" id="terminal-copy" title="Copy Terminal Session"></i>
+                            </div>
+                        </div>
+                        <div class="terminal-body" id="terminal-body">
+                            <!-- Commands are inserted and animated dynamically by script.js -->
+                            <div class="terminal-line"><span class="prompt">mohan@linux-server:~$</span> <span class="typed-command">whoami</span></div>
+                            <div class="terminal-output">mohan_mali</div>
+                            <div class="terminal-line"><span class="prompt">mohan@linux-server:~$</span> <span class="typed-command">cat roles.txt</span></div>
+                            <div class="terminal-output">
+- Application Support (L2)
+- Linux Administrator
+- Automation Scripting
+- Database Operations
+- DevOps Trainee
+                            </div>
+                            <div class="terminal-line"><span class="prompt">mohan@linux-server:~$</span> <span class="typed-command">ping -c 3 devops_skills</span></div>
+                            <div class="terminal-output">
+PING devops_skills (127.0.0.1) 56(84) bytes of data.
+64 bytes from localhost: icmp_seq=1 ttl=64 time=0.032 ms (Docker)
+64 bytes from localhost: icmp_seq=2 ttl=64 time=0.041 ms (AWS_EC2)
+64 bytes from localhost: icmp_seq=3 ttl=64 time=0.038 ms (CI_CD)
+--- devops_skills ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 0.032/0.037/0.041/0.004 ms
+                            </div>
+                            <div class="terminal-line"><span class="prompt">mohan@linux-server:~$</span> <span class="terminal-cursor"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator-container">
+                <a href="#about" class="scroll-indicator-mouse" aria-label="Scroll Down">
+                    <span class="mouse-wheel"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Journey & background</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3 class="about-subtitle">Who is Mohan Mali?</h3>
+                        <p class="about-text">
+                            I am a detail-oriented <strong>Application Support Engineer</strong> with over 2 years of professional experience managing enterprise environments, ensuring critical service uptime, and diagnosing complex issues. I specialize in Linux server administration, Nginx hosting, SQL databases, and custom automation.
+                        </p>
+                        <p class="about-text">
+                            I have a passion for understanding the inner workings of systems. My support work has taught me how crucial stability, logging, and observability are. I spend my time resolving issues and finding patterns that can be automated away using Python or Bash scripts.
+                        </p>
+                        <p class="about-text">
+                            My constant hunger for learning has naturally steered me toward the DevOps domain. I am aggressively upgrading my skill set in containerization (Docker), continuous integration and deployment (Jenkins, Git Actions), cloud environments (AWS), and orchestration (Kubernetes) to seamlessly transition into a DevOps Engineer role.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years of Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Tech Technologies</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">SLA Uptime Maintained</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-details-card">
+                        <div class="card-inner">
+                            <h3 class="card-title">Professional Overview</h3>
+                            <ul class="info-list">
+                                <li>
+                                    <span class="info-key"><i class="fa-solid fa-user-tie"></i> Role:</span>
+                                    <span class="info-value">Application Support Engineer</span>
+                                </li>
+                                <li>
+                                    <span class="info-key"><i class="fa-solid fa-graduation-cap"></i> Focus:</span>
+                                    <span class="info-value">DevOps & Cloud Technologies</span>
+                                </li>
+                                <li>
+                                    <span class="info-key"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                                    <span class="info-value">Pune, India (Open to Relocation)</span>
+                                </li>
+                                <li>
+                                    <span class="info-key"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                    <span class="info-value">mohan.mali@example.com</span>
+                                </li>
+                                <li>
+                                    <span class="info-key"><i class="fa-solid fa-briefcase"></i> Availability:</span>
+                                    <span class="info-value">Immediate (1-month notice)</span>
+                                </li>
+                            </ul>
+                            <div class="card-footer">
+                                <div class="badge-container">
+                                    <span class="tech-badge">Support L2</span>
+                                    <span class="tech-badge">Sysadmin</span>
+                                    <span class="tech-badge">DevOps Enthusiast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Do Section -->
+        <section class="services-section" id="services">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">What I Do</span>
+                    <h2 class="section-title">Responsibilities & Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-life-ring"></i></div>
+                        <h3 class="service-title">Production App Support (L2)</h3>
+                        <p class="service-description">
+                            Troubleshooting and resolving enterprise application issues. Ensuring high availability, resolving tickets under strict SLAs, and maintaining system health.
+                        </p>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3 class="service-title">Linux Server Administration</h3>
+                        <p class="service-description">
+                            Administering Linux servers (Ubuntu/RHEL). Managing system resources, tracking CPU/memory load, auditing security logs, and managing users, permissions, and packages.
+                        </p>
+                    </div>
+                    
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h3 class="service-title">Log Analysis & Troubleshooting</h3>
+                        <p class="service-description">
+                            Tracing application workflows, identifying errors using tools like tail, grep, awk, and examining application-level logs to perform thorough Root Cause Analysis (RCA).
+                        </p>
+                    </div>
+                    
+                    <!-- Service Card 4 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3 class="service-title">Nginx & Web Servers</h3>
+                        <p class="service-description">
+                            Configuring and hosting web servers with Nginx. Managing reverse proxy setups, virtual hosts, SSL/TLS certificate installation (Let's Encrypt), load balancing, and performance tuning.
+                        </p>
+                    </div>
+                    
+                    <!-- Service Card 5 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="service-title">Database Operations</h3>
+                        <p class="service-description">
+                            Executing data fixes, optimizing basic queries, and debugging issues on MySQL, PostgreSQL, and MariaDB environments. Performing manual backups and data migrations.
+                        </p>
+                    </div>
+                    
+                    <!-- Service Card 6 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3 class="service-title">Scripting & Automation</h3>
+                        <p class="service-description">
+                            Automating redundant system administration workflows and repetitive tasks using custom Shell scripts and Python (crontabs, log rotation, database monitoring, alerts).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">My Toolkit</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <!-- Skills Filter Controls -->
+                <div class="skills-filter-container">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="sysadmin">Linux & Network</button>
+                    <button class="filter-btn" data-filter="prog">Programming & Web</button>
+                    <button class="filter-btn" data-filter="db">Databases</button>
+                    <button class="filter-btn" data-filter="devops">DevOps & Cloud</button>
+                </div>
+                
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Linux -->
+                    <div class="skill-card" data-category="sysadmin">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper linux-icon"><i class="fa-brands fa-linux"></i></div>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <h3 class="skill-name">Linux OS (Ubuntu, RHEL)</h3>
+                        <p class="skill-desc">Server administration, user access, packages, monitoring, systemd, networking tools.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    
+                    <!-- Python -->
+                    <div class="skill-card" data-category="prog">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper python-icon"><i class="fa-brands fa-python"></i></div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-desc">Scripting for task automation, REST API requests, files parsing, Django backend framework.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    </div>
+                    
+                    <!-- Shell Scripting -->
+                    <div class="skill-card" data-category="sysadmin">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper shell-icon"><i class="fa-solid fa-terminal"></i></div>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <h3 class="skill-name">Shell Scripting</h3>
+                        <p class="skill-desc">Bash scripting, cron automation, text manipulation (grep, awk, sed), backup configurations.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+                    
+                    <!-- Nginx -->
+                    <div class="skill-card" data-category="sysadmin">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper nginx-icon"><i class="fa-solid fa-network-wired"></i></div>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <h3 class="skill-name">Nginx Web Server</h3>
+                        <p class="skill-desc">Reverse proxy setup, SSL configuration, server blocks, load balancer settings, HTTP responses.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+                    
+                    <!-- MySQL/MariaDB -->
+                    <div class="skill-card" data-category="db">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper db-icon"><i class="fa-solid fa-database"></i></div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <h3 class="skill-name">MySQL / MariaDB</h3>
+                        <p class="skill-desc">Executing SQL scripts, query profiling, creating indexes, backups, and user management.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                    </div>
+                    
+                    <!-- PostgreSQL -->
+                    <div class="skill-card" data-category="db">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper postgres-icon"><i class="fa-solid fa-database"></i></div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <h3 class="skill-name">PostgreSQL</h3>
+                        <p class="skill-desc">Data recovery, running procedures, relational constraints analysis, log analysis.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 65%;"></div></div>
+                    </div>
+                    
+                    <!-- Django -->
+                    <div class="skill-card" data-category="prog">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper django-icon"><i class="fa-solid fa-cubes"></i></div>
+                            <span class="skill-level">Basics</span>
+                        </div>
+                        <h3 class="skill-name">Django Framework</h3>
+                        <p class="skill-desc">App support for Django, interpreting error stack traces, administering migration flows.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 50%;"></div></div>
+                    </div>
+                    
+                    <!-- Docker -->
+                    <div class="skill-card" data-category="devops">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper docker-icon"><i class="fa-brands fa-docker"></i></div>
+                            <span class="skill-level">Basics (Learning)</span>
+                        </div>
+                        <h3 class="skill-name">Docker Containers</h3>
+                        <p class="skill-desc">Creating Dockerfiles, spinning up docker-compose file environments, managing volumes and network.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="style-bar; width: 45%;"></div></div>
+                    </div>
+                    
+                    <!-- AWS EC2 -->
+                    <div class="skill-card" data-category="devops">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper aws-icon"><i class="fa-brands fa-aws"></i></div>
+                            <span class="skill-level">Basics (Learning)</span>
+                        </div>
+                        <h3 class="skill-name">AWS Services</h3>
+                        <p class="skill-desc">EC2 instances management, security groups configuration, VPC, S3 bucket storage policies.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                    </div>
+                    
+                    <!-- Jenkins / CI/CD -->
+                    <div class="skill-card" data-category="devops">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper jenkins-icon"><i class="fa-brands fa-jenkins"></i></div>
+                            <span class="skill-level">Basics (Learning)</span>
+                        </div>
+                        <h3 class="skill-name">CI/CD & Jenkins</h3>
+                        <p class="skill-desc">Continuous integration flows, running jobs, understanding pipelines, and GitHub webhooks.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                    </div>
+
+                    <!-- Git / GitHub -->
+                    <div class="skill-card" data-category="prog">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper git-icon"><i class="fa-brands fa-git-alt"></i></div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <h3 class="skill-name">Git & Version Control</h3>
+                        <p class="skill-desc">Branch management, pull requests, resolving merge conflicts, remote tracking, and tag releases.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    </div>
+                    
+                    <!-- Zabbix & Monitoring -->
+                    <div class="skill-card" data-category="sysadmin">
+                        <div class="skill-head">
+                            <div class="skill-icon-wrapper zabbix-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <h3 class="skill-name">Zabbix & Monitoring</h3>
+                        <p class="skill-desc">Setting up alerts, checking agent statuses, interpreting host metrics, CPU load graphs.</p>
+                        <div class="skill-progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Objective / Timeline Section -->
+        <section class="objective-section" id="objective">
+            <div class="glow-orb orb-3"></div>
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Vision</span>
+                    <h2 class="section-title">Career Objective</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="objective-box">
+                    <div class="objective-quote">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p class="objective-text">
+                            My goal is to transition into a skilled <strong>DevOps Engineer</strong> by combining my strong 2+ years of application support experience with cloud environments, containerization, automation, and CI/CD pipelines. I enjoy bridging the gap between operations and software delivery, engineering highly reliable, resilient, and scalable software environments.
+                        </p>
+                    </div>
+                    
+                    <div class="devops-roadmap">
+                        <h3 class="roadmap-title">DevOps Learning Blueprint</h3>
+                        <div class="roadmap-timeline">
+                            <div class="roadmap-step completed">
+                                <div class="step-icon"><i class="fa-solid fa-check"></i></div>
+                                <div class="step-content">
+                                    <h4>Linux & Administration</h4>
+                                    <p>Proficient in server OS setups, Nginx configurations, script writing, system configurations, and networking basics.</p>
+                                </div>
+                            </div>
+                            <div class="roadmap-step in-progress">
+                                <div class="step-icon"><i class="fa-solid fa-spinner fa-spin"></i></div>
+                                <div class="step-content">
+                                    <h4>Containers & Virtualization</h4>
+                                    <p>Focusing on containerization via <strong>Docker</strong>, managing volumes, orchestration concepts with Kubernetes, and local environments.</p>
+                                </div>
+                            </div>
+                            <div class="roadmap-step planned">
+                                <div class="step-icon"><i class="fa-solid fa-hourglass-start"></i></div>
+                                <div class="step-content">
+                                    <h4>CI/CD & Cloud Infrastructure</h4>
+                                    <p>Expanding on <strong>AWS EC2</strong>, IAM, VPC, S3, Jenkins pipeline configurations, and Infrastructure as Code (Terraform basics).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-panel">
+                        <h3>Let's build something together!</h3>
+                        <p class="contact-panel-desc">
+                            Are you looking for an Application Support Engineer who can troubleshoot deep production bugs, keep your Nginx servers green, automate manual steps, and is actively upskilling to join your DevOps crew? Reach out!
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Email Me</span>
+                                    <a href="mailto:mohan.mali@example.com" class="contact-value">mohan.mali@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-value">Pune, Maharashtra, India</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div class="contact-text">
+                                    <span class="contact-label">Working Hours</span>
+                                    <span class="contact-value">Flexible / Shift-ready</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links-footer">
+                            <a href="https://github.com" target="_blank" rel="noopener" class="social-circle github" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-circle linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel">
+                        <form id="portfolio-contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <input type="text" id="form-name" class="form-control" placeholder=" " required>
+                                <label for="form-name" class="form-label">Full Name</label>
+                                <span class="error-msg">Please enter your name</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="form-email" class="form-control" placeholder=" " required>
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <span class="error-msg">Please enter a valid email address</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" id="form-subject" class="form-control" placeholder=" ">
+                                <label for="form-subject" class="form-label">Subject</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="form-message" class="form-control" rows="5" placeholder=" " required></textarea>
+                                <label for="form-message" class="form-label">Your Message</label>
+                                <span class="error-msg">Please write a message</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text-content">Send Message</span>
+                                <i class="fa-solid fa-paper-plane send-icon"></i>
+                            </button>
+                            
+                            <div class="form-status-alert" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-symbol">&lt;</span>Mohan<span class="logo-dot">.</span>Mali<span class="logo-symbol">/&gt;</span>
+                </a>
+                <p class="footer-quote">Automating system processes. Troubleshooting app delivery pipelines.</p>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Mohan Mali. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#about">About</a>
+                    <a href="#services">What I Do</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <a href="#hero" class="back-to-top-btn" id="back-to-top" aria-label="Scroll to top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
